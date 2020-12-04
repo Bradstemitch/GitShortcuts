@@ -1,5 +1,4 @@
 #!/bin/bash
-#branch='git rev-parse --abbrev-ref HEAD'
 
 branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 echo ${branch}
